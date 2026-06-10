@@ -5,11 +5,14 @@ build/
 *.map
 
 *.bak
-*.kicad_pcb-bak
+*.kicad_pcb-bak          
 *.sch-bak
+*-bak/
 _autosave-*
 *.kicad_prl
 *.lck
+*-backups/
+.history/
 
 *.erc
 *.drc
