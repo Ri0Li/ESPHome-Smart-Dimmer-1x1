@@ -1,0 +1,45 @@
+esphome:
+  name: dimmer-1x1 ## CHANGE ME!!
+  friendly_name: ESPHome-Smart-Dimmer-1x1 ## CHANGE ME!!
+
+esp32:
+  board: esp32-c3-devkitm-1
+  framework:
+    type: esp-idf
+
+logger:
+
+api:
+
+ota:
+- platform: esphome
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  fast_connect: true 
+  power_save_mode: none
+  output_power: 8.5dB
+  #  Optional Static IP (Highly Recommended for stability reasons)
+  #manual_ip:
+  #  static_ip: "YOUR IP" ## CHANGE ME!!
+  #  gateway: "YOUR GATEWAY IP" ## CHANGE ME!!
+  #  subnet: "YOUR SUBNET" ## CHANGE ME!!
+  ap:
+    ssid: "dimmer-1x1"
+    password: "YOUR PASSWOED" ## CHANGE ME!!
+
+captive_portal:
+
+output:
+  - platform: ledc
+    pin: 
+      number: GPIO4
+    id: led_pwm_output
+    frequency: 1000Hz
+light:
+  - platform: monochromatic
+    output: led_pwm_output
+    name: "RENAME YOUR DEVICE!" ## CHANGE ME!!
+    id: led
+    restore_mode: ALWAYS_OFF
