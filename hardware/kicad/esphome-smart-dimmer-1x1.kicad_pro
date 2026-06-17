@@ -522,7 +522,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "Usb Light Dimmer Unit A PCB/",
+      "plot": "../PCB/",
       "specctra_dsn": "",
       "vrml": ""
     },
