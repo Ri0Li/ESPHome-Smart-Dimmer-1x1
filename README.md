@@ -15,8 +15,8 @@ To build this project, you will need the following components:
 * **N-Channel MOSFET:** IRLB8721PBF
 * **Gate Resistor:** 1kΩ resistor
 * **USB Connectors:** 1x USB-A female, 1x USB-A male
-* **PCB Design:** Available in the [`hardware/pcb`](hardware/pcb) directory. Compatible with any standard PCB fabrication service.
-* **3D Enclosure (Optional):** Available in the [`hardware/3d model`](hardware/3d%20model) directory. It requires 2x M3 28mm screws and 2x M3 10mm screws to secure the PCB to the case.
+* **PCB:** Available in the [`hardware/pcb`](hardware/pcb) directory. Compatible with any standard PCB fabrication service.
+* **3D Enclosure (Optional):** Available in the [`hardware/3d model`](hardware/3d%20model) directory. It requires 2x M3 28mm screws and 2x M3 10mm screws to secure the PCB to the case.(Not the best design but it work!)
 
 > **Note:** This design uses through-hole components to reduce assembly difficulty, so surface-mount soldering required!
 
